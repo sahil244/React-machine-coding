@@ -11,7 +11,7 @@ export default function App() {
         if (!goingUp.current && prev === 0) {
           alert("Test");
           goingUp.current = true;   // flip direction
-          return prev + 1;          // start going up
+          return prev + 1;          // start going up  if we remove this then timer strt from 2 after alert ..because alert dont block the timer
         }
 
         if (goingUp.current && prev === 10) {
